@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "avl.h"
 #include <stdlib.h>
+#include "avl.h"
 
 /** Insere um elemento na árvore
  * @param raiz ponteiro para raiz absoluta da árvore
@@ -482,13 +482,15 @@ void run()
 
     while (1)
     {
+        printf("\n");
         printf("(1) Inserir\n");
         printf("(2) Preorder\n");
         printf("(3) Remover\n");
         printf("(99) Sair\n");
 
-        printf("> \n");
+        printf("\e[0;32m> ");
         scanf("%d", &operacao);
+        printf("\033[0m");
 
         switch (operacao)
         {
